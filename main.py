@@ -44,3 +44,11 @@ class Game:
             print(f"🎉 Поздравляем, {self.player.name}! Вы победили!")
         else:
             print(f"💀 {self.computer.name} одержал победу. Попробуйте снова!")
+
+
+if __name__ == "__main__":
+    player_name = input("Введите имя вашего героя: ").strip()
+    if not player_name:
+        player_name = "Герой"
+    game = Game(player_name)
+    game.start()
